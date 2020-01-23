@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+    
+        .card-header{
+            text-align: center;
+        }
+
+        #sizeControls{
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 150px;
+        }
+
+        #mainTag{
+            margin-left: 25%;
+            text-align: center;
+            background-color: white;
+            width: 50%;
+            border-width: 3px;
+            border-color: black;
+            border-style: solid;
+        }
+
+        body{
+            background-image: URL("https://images.assetsdelivery.com/compings_v2/tuk69tuk/tuk69tuk1803/tuk69tuk180300398.jpg");
+        }
+
+    </style>
+</head>
+<body>
+
+    <script src="https://code.jquery.com/jquery.js" type = "text/javascript"></script>
+    
+    <h1 id="mainTag">Take a Brief Code Quiz!</h1>
+
+
+    <div id="sizeControls" class="card">
+        <h4 class="card-header">Which language is used to stylize html pages?</h4>
+        <div class="card-body">
+          <div class="text-center">
+            <button class="btn btn-dark btn-lg normal-button" id="cssBtn">
+              <span class="fa fa-ok"></span>CSS</button>
+            <button class="btn btn-dark btn-lg normal-button" id="jsBtn">
+              <span class="fa fa-ok"></span>JavaScript</button>
+            <button class="btn btn-dark btn-lg normal-button" id="htmlBtn">
+              <span class="fa fa-ok"></span>HTML</button>
+          </div>
+        </div>
+      </div>
+    
+    
+    <script>
+
+        var count = 0;
+
+        for ()
+
+            $("#cssBtn").on("click", function() {
+                alert("I've been clicked! css");
+            });
+
+            $("#javascriptBtn").on("click", function() {
+                alert("I've been clicked! js");
+            });
+
+            $("#htmlBtn").on("click", function() {
+                alert("I've been clicked! html");
+            });
+
+
+
+
+        // var questionOne = prompt("Which language is used to stylize html pages?");
+        // var questionOneL = questionOne.toLowerCase();
+        // if (questionOneL === "css"){
+        //     count ++;
+        //     alert("Correct! Your score is now " + count);
+        // } else if (questionOne != "css"){
+        //     alert("Sorry! Incorrect. Your score is still " + count);
+        // };
+
+        // var questionTwo = prompt("Which language is used to add responsivness to a webpage?");
+        // var questionTwoL = questionTwo.toLowerCase();
+        // if (questionTwoL === "javascript"){
+        //     count ++;
+        //     alert("Correct! Your score is now " + count);
+        // } else if (questionTwoL != "javscript"){
+        //     alert("Sorry! Incorrect. Your score is still " + count);
+        // };
+
+        // var questionThree = prompt("Which language uses for loops?");
+        // var questionThreeL = questionThree.toLowerCase();
+        // if (questionThreeL === "javascript"){
+        //     count ++;
+        //     alert("Correct! Your score is now " + count);
+        // } else if (questionThreeL != "javscript"){
+        //     alert("Sorry! Incorrect. Your score is still " + count);
+        // };
+
+        // if (count === 3){
+        //     alert("You win! You answered all three correct!");
+        // } else if (count != 3){
+        //     alert("You lose! You didnt answer all three correctly. Your final score was " + count);
+        // };
+        
+
+        </script>
+    
+</body>
+</html>
