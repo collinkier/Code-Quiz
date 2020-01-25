@@ -1,0 +1,55 @@
+
+.card-header{
+    text-align: center;
+}
+
+#sizeControls{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 150px;
+}
+
+#mainTag{
+    margin-left: 25%;
+    text-align: center;
+    background-color: white;
+    width: 50%;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+}
+
+body{
+    background-image: URL("https://images.assetsdelivery.com/compings_v2/tuk69tuk/tuk69tuk1803/tuk69tuk180300398.jpg");
+}
+
+.card{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 75%;
+  margin-left: 12.5%;
+}
+
+.finalC{
+  position: relative;
+  margin-left: 40%;
+  color: green;
+  font-weight: bold;
+  display: none;
+}
+
+.finalF{
+  color: red;
+  font-weight: bold;
+  position: relative;
+  margin-left: 40%;
+  display: none;
+}
+
+#submit{
+  margin-bottom: 40px;
+  font-weight: bold;
+  margin-left: 20%;
+
+}
+

@@ -7,33 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <style>
-    
-        .card-header{
-            text-align: center;
-        }
+    <link href="script.js">
+    <link rel="stylesheet" href="style.css">
 
-        #sizeControls{
-            width: 50%;
-            margin-left: 25%;
-            margin-top: 150px;
-        }
-
-        #mainTag{
-            margin-left: 25%;
-            text-align: center;
-            background-color: white;
-            width: 50%;
-            border-width: 3px;
-            border-color: black;
-            border-style: solid;
-        }
-
-        body{
-            background-image: URL("https://images.assetsdelivery.com/compings_v2/tuk69tuk/tuk69tuk1803/tuk69tuk180300398.jpg");
-        }
-
-    </style>
 </head>
 <body>
 
@@ -41,78 +17,103 @@
     
     <h1 id="mainTag">Take a Brief Code Quiz!</h1>
 
+    <!-- First question Card -->
 
-    <div id="sizeControls" class="card">
-        <h4 class="card-header">Which language is used to stylize html pages?</h4>
-        <div class="card-body">
-          <div class="text-center">
-            <button class="btn btn-dark btn-lg normal-button" id="cssBtn">
-              <span class="fa fa-ok"></span>CSS</button>
-            <button class="btn btn-dark btn-lg normal-button" id="jsBtn">
-              <span class="fa fa-ok"></span>JavaScript</button>
-            <button class="btn btn-dark btn-lg normal-button" id="htmlBtn">
-              <span class="fa fa-ok"></span>HTML</button>
+    <div class="container">
+      <div id="cardOne" class="card">
+          <h4 class="card-header">Which language is used to stylize html pages?</h4>
+          <div class="card-body">
+            <div class="text-center" id="ButtonG1">
+              <button class="btn btn-dark btn-lg normal-button" id="correct1">
+                <span class="fa fa-ok"></span>CSS</button>
+              <button class="btn btn-dark btn-lg normal-button" id="false1">
+                <span class="fa fa-ok"></span>JavaScript</button>
+              <button class="btn btn-dark btn-lg normal-button" id="falseA1">
+                <span class="fa fa-ok"></span>Python</button>
+            </div>
+            <button id = "correctBtn1" class="finalC">Correct!</button>
+            <button id = "falseBtn1" class="finalF">Incorrect</button>
+          </div>
+        </div>
+
+        <!-- Second question card -->
+
+        <div id="cardTwo" class="card">
+          <h4 class="card-header">What does "i++" do when used in a 'for loop'?</h4>
+          <div class="card-body">
+            <div class="text-center" id="ButtonG2">
+              <button class="btn btn-dark btn-lg normal-button" id="correct2">
+                <span class="fa fa-ok"></span>Increases the Count of "i"</button>
+              <button class="btn btn-dark btn-lg normal-button" id="false2">
+                <span class="fa fa-ok"></span>Prints "i" two times</button>
+              <button class="btn btn-dark btn-lg normal-button" id="falseA2">
+                <span class="fa fa-ok"></span>No idea</button>
+            </div>
+            <button id = "correctBtn2" class="finalC">Correct!</button>
+            <button id = "falseBtn2" class="finalF">Incorrect</button>
+          </div>
+        </div>
+
+        <!-- third quetsion card -->
+
+        <div id="cardThree" class="card">
+          <h4 class="card-header">What has shortcuts to JavaScript?</h4>
+          <div class="card-body">
+            <div class="text-center" id="ButtonG3">
+              <button class="btn btn-dark btn-lg normal-button" id="false3">
+                <span class="fa fa-ok"></span>CSS</button>
+              <button class="btn btn-dark btn-lg normal-button" id="falseA3">
+                <span class="fa fa-ok"></span>Python</button>
+              <button class="btn btn-dark btn-lg normal-button" id="correct3">
+                <span class="fa fa-ok"></span>jQuery</button>
+            </div>
+            <button id = "correctBtn3" class="finalC">Correct!</button>
+            <button id = "falseBtn3" class="finalF">Incorrect</button>
+          </div>
+        </div>
+
+        <!-- fourth question card -->
+
+        <div id="cardFour" class="card">
+          <h4 class="card-header">What do you type to create a button in jQuery?</h4>
+          <div class="card-body">
+            <div class="text-center" id="ButtonG4">
+              <button class="btn btn-dark btn-lg normal-button" id="falseA4">
+                <span class="fa fa-ok"></span>Create.Button</button>
+              <button class="btn btn-dark btn-lg normal-button" id="correct4">
+                <span class="fa fa-ok"></span>$(<"btn">)</button>
+              <button class="btn btn-dark btn-lg normal-button" id="false4">
+                <span class="fa fa-ok"></span>InnerHTML.Button</button>
+            </div>
+            <button id = "correctBtn4" class="finalC">Correct!</button>
+            <button id = "falseBtn4" class="finalF">Incorrect</button>
+          </div>
+        </div>
+
+        <!-- fifth question card -->
+
+        <div id="cardFive" class="card">
+          <h4 class="card-header">What does a "<"div">" do in html?</h4>
+          <div class="card-body">
+            <div class="text-center" id="ButtonG5">
+              <button class="btn btn-dark btn-lg normal-button" id="falseA5">
+                <span class="fa fa-ok"></span>Same as a line break</button>
+              <button class="btn btn-dark btn-lg normal-button" id="correct5">
+                <span class="fa fa-ok"></span>Contains/wraps content</button>
+              <button class="btn btn-dark btn-lg normal-button" id="false5">
+                <span class="fa fa-ok"></span>Splits page in half</button>
+            </div>
+            <button id = "correctBtn5" class="finalC">Correct!</button>
+            <button id = "falseBtn5" class="finalF">Incorrect</button>
           </div>
         </div>
       </div>
+
+      <button type="button" class="btn btn-primary" id="submit">Submit</button>
     
-    
-    <script>
-
-        var count = 0;
-
-        for ()
-
-            $("#cssBtn").on("click", function() {
-                alert("I've been clicked! css");
-            });
-
-            $("#javascriptBtn").on("click", function() {
-                alert("I've been clicked! js");
-            });
-
-            $("#htmlBtn").on("click", function() {
-                alert("I've been clicked! html");
-            });
 
 
-
-
-        // var questionOne = prompt("Which language is used to stylize html pages?");
-        // var questionOneL = questionOne.toLowerCase();
-        // if (questionOneL === "css"){
-        //     count ++;
-        //     alert("Correct! Your score is now " + count);
-        // } else if (questionOne != "css"){
-        //     alert("Sorry! Incorrect. Your score is still " + count);
-        // };
-
-        // var questionTwo = prompt("Which language is used to add responsivness to a webpage?");
-        // var questionTwoL = questionTwo.toLowerCase();
-        // if (questionTwoL === "javascript"){
-        //     count ++;
-        //     alert("Correct! Your score is now " + count);
-        // } else if (questionTwoL != "javscript"){
-        //     alert("Sorry! Incorrect. Your score is still " + count);
-        // };
-
-        // var questionThree = prompt("Which language uses for loops?");
-        // var questionThreeL = questionThree.toLowerCase();
-        // if (questionThreeL === "javascript"){
-        //     count ++;
-        //     alert("Correct! Your score is now " + count);
-        // } else if (questionThreeL != "javscript"){
-        //     alert("Sorry! Incorrect. Your score is still " + count);
-        // };
-
-        // if (count === 3){
-        //     alert("You win! You answered all three correct!");
-        // } else if (count != 3){
-        //     alert("You lose! You didnt answer all three correctly. Your final score was " + count);
-        // };
-        
-
-        </script>
+    <script href="script.js"></script>
     
 </body>
 </html>
