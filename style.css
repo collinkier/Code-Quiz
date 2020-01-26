@@ -20,8 +20,10 @@
 }
 
 body{
-    background-image: URL("https://images.assetsdelivery.com/compings_v2/tuk69tuk/tuk69tuk1803/tuk69tuk180300398.jpg");
-}
+    /* background-image: URL("https://images.assetsdelivery.com/compings_v2/tuk69tuk/tuk69tuk1803/tuk69tuk180300398.jpg"); */
+    background-color: gray;
+  }
+
 
 .card{
   margin-top: 20px;
@@ -47,9 +49,32 @@ body{
 }
 
 #submit{
+  position: relative;
   margin-bottom: 40px;
   font-weight: bold;
   margin-left: 20%;
+  float: left;
+}
 
+#finalDisplay{
+  text-align: center;
+  background-color: white;
+  margin-bottom: 40px;
+  padding: 60px;
+}
+
+#finalScore{
+  margin-right: 40px;
+  float: left;
+  margin-left: 10%;
+}
+
+.username{
+  margin-top: 40px;
+  text-align: center;
+}
+
+#finalDisplay{
+  display: none;
 }
 

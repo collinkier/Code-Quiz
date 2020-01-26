@@ -7,19 +7,20 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link href="script.js">
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://code.jquery.com/jquery.js"></script>
+   
+    
 </head>
 <body>
 
-    <script src="https://code.jquery.com/jquery.js" type = "text/javascript"></script>
+    
     
     <h1 id="mainTag">Take a Brief Code Quiz!</h1>
 
     <!-- First question Card -->
 
-    <div class="container">
+    
       <div id="cardOne" class="card">
           <h4 class="card-header">Which language is used to stylize html pages?</h4>
           <div class="card-body">
@@ -107,13 +108,176 @@
             <button id = "falseBtn5" class="finalF">Incorrect</button>
           </div>
         </div>
-      </div>
 
-      <button type="button" class="btn btn-primary" id="submit">Submit</button>
-    
+        <button type="button" class="btn btn-primary" id="submit">Submit</button>
+      
+        <div id="finalDisplay" class="card">
+          <h4 class="card-header">Your Results!</h4>
+          <div class="card-body" id= "cardF">
+            <div id="finalScore">
+              <span>Final Score</span>
+              <textarea id="score"></textarea>
+            </div>
+            <div>
+              <span>Outcome</span>
+              <textarea id="passFail"></textarea>
+            </div>
+            <div class="username">
+              <span>Initials Here!</span>
+              <input type="text">
+            </div>
+          </div>
+        <div>
+  
+      <script>
+        // Declare variables
+        var score = $("finalScore");
+        var success=$("passFail");
+        var initials=$("initials");
+        
+      count = 0;
+
+      //Initial alert with instructions for the quiz
+
+      alert("You will have approximately 30 seconds to answer 5 questions. If you answer 3 or more correctly, you pass.");
+      
+      //First button group
+      
+      $("#correct1").on("click", function(){
+        count ++;
+        alert("You are correct! Your new score is " + count);
+        $("#ButtonG1").hide();
+        $("#correctBtn1").show();
+        });
+      
+      $("#false1").on("click", function(){
+        count --;
+        alert("Oops! That's incorrect! Your score is now " + count);
+        $("#ButtonG1").hide();
+        $("#falseBtn1").show();
+      });
+      
+      $("#falseA1").on("click", function(){
+        count --;
+        alert("Oops! That's incorrect! Your score is now " + count);
+        $("#ButtonG1").hide();
+        $("#falseBtn1").show();
+      });
+      
+      //Second button group
+      
+      $("#correct2").on("click", function(){
+        count ++;
+        alert("You are correct! Your new score is " + count);
+        $("#ButtonG2").hide();
+        $("#correctBtn2").show();
+        });
+      
+      $("#false2").on("click", function(){
+        count --;
+        alert("Oops! That's incorrect! Your score is now " + count);
+        $("#ButtonG2").hide();
+        $("#falseBtn2").show();
+      });
+      
+      $("#falseA2").on("click", function(){
+        count --;
+        alert("Oops! That's incorrect! Your score is now " + count);
+        $("#ButtonG2").hide();
+        $("#falseBtn2").show();
+      });
+      
+      //Third button group
+      
+      $("#correct3").on("click", function(){
+        count ++;
+        alert("You are correct! Your new score is " + count);
+        $("#ButtonG3").hide();
+        $("#correctBtn3").show();
+        });
+      
+      $("#false3").on("click", function(){
+        count --;
+        alert("Oops! That's incorrect! Your score is now " + count);
+        $("#ButtonG3").hide();
+        $("#falseBtn3").show();
+      });
+      
+      $("#falseA3").on("click", function(){
+        count --;
+        alert("Oops! That's incorrect! Your score is now " + count);
+        $("#ButtonG3").hide();
+        $("#falseBtn3").show();
+      });
+      
+      //Fourth button group
+      
+      $("#correct4").on("click", function(){
+        count ++;
+        alert("You are correct! Your new score is " + count);
+        $("#ButtonG4").hide();
+        $("#correctBtn4").show();
+        });
+      
+      $("#false4").on("click", function(){
+        count --;
+        alert("Oops! That's incorrect! Your score is now " + count);
+        $("#ButtonG4").hide();
+        $("#falseBtn4").show();
+      });
+      
+      $("#falseA4").on("click", function(){
+        count --;
+        alert("Oops! That's incorrect! Your score is now " + count);
+        $("#ButtonG4").hide();
+        $("#falseBtn4").show();
+      });
+      
+      //Fifth button group
+      
+      $("#correct5").on("click", function(){
+        count ++;
+        alert("You are correct! Your new score is " + count);
+        $("#ButtonG5").hide();
+        $("#correctBtn5").show();
+        });
+      
+      $("#false5").on("click", function(){
+        count --;
+        alert("Oops! That's incorrect! Your score is now " + count);
+        $("#ButtonG5").hide();
+        $("falseBtn5").show();
+      });
+      
+      $("#falseA5").on("click", function(){
+        count --;
+        alert("Oops! That's incorrect! Your score is now " + count);
+        $("#ButtonG5").hide();
+        $("#falseBtn5").show();
+      });
+
+      //Submit button
+
+      $("#submit").on("click", function(){
+        $(".card").hide();
+        $("#submit").hide();
+        $("#finalDisplay").show();
+        $("#score").text(count);
+        if (count > 2){
+          $("#passFail").text("You passed!")
+        } else{
+          $("#passFail").text("You Failed!")
+        };
+      });
 
 
-    <script href="script.js"></script>
+
+    </script>
+
+  
     
 </body>
+
+
+
 </html>
