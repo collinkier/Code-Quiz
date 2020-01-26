@@ -18,6 +18,10 @@
     
     <h1 id="mainTag">Take a Brief Code Quiz!</h1>
 
+    <!-- Timer -->
+
+    <textarea id="timer"></textarea>
+
     <!-- First question Card -->
 
     
@@ -141,6 +145,22 @@
 
       alert("You will have approximately 30 seconds to answer 5 questions. If you answer 3 or more correctly, you pass.");
       
+      // The 3o second timer
+
+      var x = setInterval(function() {
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        var endTime = 0;
+        var startTime = 30;
+        var distance = endTime - startTime;
+        $("#timer").innerHTML = seconds;
+        
+        if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+          }, 1000);
+
+
       //First button group
       
       $("#correct1").on("click", function(){
