@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
     <script src="https://code.jquery.com/jquery.js"></script>
    
     
@@ -153,12 +153,11 @@
         var startTime = 30;
         var distance = endTime - startTime;
         $("#timer").innerHTML = seconds;
-        
         if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-            }
-          }, 1000);
+          clearInterval(x);
+          $("#timer").innerHTML = "EXPIRED";
+              }
+            }, 1000);
 
 
       //First button group
@@ -289,6 +288,8 @@
           $("#passFail").text("You Failed!")
         };
       });
+
+      $("#")
 
 
 

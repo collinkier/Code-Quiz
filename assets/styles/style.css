@@ -54,6 +54,7 @@ body{
   font-weight: bold;
   margin-left: 20%;
   float: left;
+  /* background-color: white; */
 }
 
 #finalDisplay{
